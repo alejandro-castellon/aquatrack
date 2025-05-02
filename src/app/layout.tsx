@@ -1,6 +1,7 @@
 import { inter } from "@/fonts";
 import type { Metadata } from "next";
 import "@/styles/globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
   title: "Aquatrack",
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang="es" className="scroll-smooth">
       <body className={`${inter.className} antialiased`}>
         {children}
+        <Toaster />
       </body>
     </html>
   );
