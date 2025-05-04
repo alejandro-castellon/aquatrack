@@ -1,6 +1,7 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import DarkWrapper from "../ui/home/dark-gradient";
 import { Logo } from "../ui/home/logo";
+import Link from "next/link";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,9 +12,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center mb-4">
+            <Link href="#" className="flex items-center mb-4">
               <Logo w={50} h={50} />
-            </div>
+            </Link>
             <p className="text-gray-300 mb-4">
               Innovando en la gestión de recursos hídricos con tecnología IoT
               para edificios y condominios.
@@ -123,16 +124,16 @@ const Footer = () => {
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-sky-400 mr-2" />
                 <a
-                  href="mailto:info@aquatrack.com"
+                  href="mailto:info@aquatrack.net"
                   className="text-gray-300 hover:text-sky-400 transition-colors"
                 >
-                  admin@aquatrack.com
+                  info@aquatrack.net
                 </a>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-sky-400 mr-2" />
                 <a
-                  href="tel:+123456789"
+                  href="tel:+59165369944"
                   className="text-gray-300 hover:text-sky-400 transition-colors"
                 >
                   +591 (653) 69944

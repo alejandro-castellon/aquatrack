@@ -1,4 +1,5 @@
 import { ReactNode, HTMLAttributes } from "react";
+import Image from "next/image";
 
 interface GradientWrapperProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
@@ -12,14 +13,19 @@ const GradientWrapper: React.FC<GradientWrapperProps> = ({
 }) => (
   <div {...props} className={`relative pt-28 ${props.className || ""}`}>
     <div
-      className={`absolute inset-0 w-full h-full${wrapperClassName || ""}`}
-      style={{
-        backgroundImage: `url(/agua.jpg)`,
-        backgroundSize: "cover",
-        backgroundPosition: "center top",
-        zIndex: -1,
-      }}
-    />
+      className={`absolute inset-0 w-full h-full ${
+        wrapperClassName || ""
+      } overflow-hidden`}
+    >
+      <Image
+        src="/agua.jpg"
+        alt="Water background"
+        fill
+        sizes="100vw"
+        priority={true}
+        className="object-cover object-top"
+      />
+    </div>
     <div className="relative">{children}</div>
   </div>
 );

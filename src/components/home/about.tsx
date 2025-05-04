@@ -299,14 +299,11 @@ export default function About() {
             <div className="flex flex-col gap-2 sm:flex-row">
               <Button
                 size="lg"
-                className="bg-white text-sky-600 hover:bg-sky-50 rounded"
+                className="bg-white text-sky-600 hover:bg-sky-50"
               >
                 Solicitar implementación
               </Button>
-              <Button
-                size="lg"
-                className="water-gradient rounded text-white border"
-              >
+              <Button size="lg" className="water-gradient border">
                 Contacta un asesor
               </Button>
             </div>

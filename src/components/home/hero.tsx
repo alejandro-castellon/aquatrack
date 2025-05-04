@@ -1,6 +1,5 @@
 import GradientWrapper from "@/components/ui/home/gradient";
-import NavLink from "@/components/ui/home/navlink";
-
+import Link from "next/link";
 /*import { Button } from "@/components/ui/button";
 import { Droplet, Building } from "lucide-react";
 
@@ -91,9 +90,9 @@ const Hero = () => (
         gestionar su consumo de agua como nunca antes.
       </p>
       <div className="flex items-center justify-center gap-x-3 font-medium text-sm">
-        <NavLink
-          href="/dashboard"
-          className="flex items-center gap-x-2 text-white water-gradient"
+        <Link
+          href="/#contact"
+          className="flex items-center gap-x-2 text-white water-gradient py-2.5 px-4 rounded-full"
         >
           Contáctanos
           <svg
@@ -108,10 +107,10 @@ const Hero = () => (
               clipRule="evenodd"
             />
           </svg>
-        </NavLink>
-        <NavLink
-          href="#servicios"
-          className="flex items-center gap-x-2 text-gray-700 hover:text-gray-900 border border-sky-300 bg-white hover:bg-sky-100 active:bg-sky-200 "
+        </Link>
+        <Link
+          href="#features"
+          className="flex items-center gap-x-2 text-gray-700 hover:text-gray-900 border border-sky-300 bg-white hover:bg-sky-100 active:bg-sky-200 py-2.5 px-4 rounded-full"
         >
           Conocer Más
           <svg
@@ -126,7 +125,7 @@ const Hero = () => (
               clipRule="evenodd"
             />
           </svg>
-        </NavLink>
+        </Link>
       </div>
     </div>
   </GradientWrapper>

@@ -43,8 +43,9 @@ export function NavbarMenu() {
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
             <NavbarButton
-              className="bg-sky-600 rounded text-white"
+              className="bg-sky-600 text-white"
               variant="primary"
+              href="/dashboard"
             >
               Iniciar sesión
             </NavbarButton>
@@ -79,7 +80,8 @@ export function NavbarMenu() {
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
-                className="w-full bg-sky-600 rounded text-white"
+                className="w-full bg-sky-600 text-white"
+                href="/dashboard"
               >
                 Iniciar Sesión
               </NavbarButton>

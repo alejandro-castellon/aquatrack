@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Products = () => {
   return (
@@ -88,7 +89,7 @@ const Products = () => {
                     consumo en tiempo real a nuestra plataforma.
                   </p>
                   <div className="mt-auto">
-                    <Button className="bg-sky-600 hover:bg-sky-700 w-full sm:w-auto text-white rounded">
+                    <Button className="bg-sky-600 hover:bg-sky-700 w-full sm:w-auto">
                       Ver especificaciones técnicas
                     </Button>
                   </div>
@@ -181,9 +182,14 @@ const Products = () => {
                     generar informes detallados desde cualquier dispositivo.
                   </p>
                   <div className="mt-auto">
-                    <Button className="bg-sky-600 hover:bg-sky-700 w-full sm:w-auto text-white rounded">
-                      Ver demostración
-                    </Button>
+                    <Link
+                      href="https://www.youtube.com/watch?v=ZbLlM6jBxLY"
+                      target="_blank"
+                    >
+                      <Button className="bg-sky-600 hover:bg-sky-700 w-full sm:w-auto">
+                        Ver demostración
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -192,7 +198,7 @@ const Products = () => {
         </div>
       </section>
 
-      <div className="w-full py-20 bg-sky-50">
+      <div className="w-full py-10 sm:py-20 bg-sky-50">
         <div className="px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">

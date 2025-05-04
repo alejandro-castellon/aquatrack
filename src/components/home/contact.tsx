@@ -42,7 +42,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="pt-20 pb-36 bg-white">
+    <section id="contact" className="pt-18 sm:pt-12 pb-36 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:mt-10">
         <div className="text-center mb-16">
           <div className="inline-block rounded bg-sky-100 px-3 py-1 text-sm text-sky-700 mb-4">
@@ -159,10 +159,7 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <Button
-                type="submit"
-                className="w-full water-gradient rounded text-white"
-              >
+              <Button type="submit" className="w-full water-gradient">
                 Enviar Mensaje
               </Button>
             </form>
