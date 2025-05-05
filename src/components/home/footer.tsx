@@ -1,6 +1,6 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import DarkWrapper from "../ui/home/dark-gradient";
-import { Logo } from "../ui/home/logo";
+import { Logo } from "../logo";
 import Link from "next/link";
 
 const Footer = () => {
