@@ -1,11 +1,14 @@
 import TenantData from "@/components/tenants/tenant";
 import { inquilinos } from "@/lib/data";
 
-export default async function Tenant({ params }: { params: { id: string } }) {
-  const resolvedParams = await params;
-  const inquilinoId: string = resolvedParams.id;
+export default async function Tenant({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const inquilinoId = await params;
   const inquilinoIndex: number = inquilinos.findIndex(
-    (inquilino) => inquilino.id === inquilinoId
+    (inquilino) => inquilino.id === inquilinoId.id
   );
   if (inquilinoIndex === -1) {
     return <div>El inquilino no existe</div>;
