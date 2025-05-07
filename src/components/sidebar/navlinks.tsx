@@ -1,4 +1,10 @@
-import { ChartColumn, Settings, Users, LogOut } from "lucide-react";
+import {
+  ChartColumn,
+  ReceiptText,
+  Settings,
+  Users,
+  LogOut,
+} from "lucide-react";
 import { SidebarLink } from "@/components/ui/sidebar";
 
 const links = [
@@ -11,9 +17,16 @@ const links = [
   },
   {
     label: "Inquilinos",
-    href: "/dashboard/renters",
+    href: "/dashboard/tenants",
     icon: (
       <Users className="h-6 w-6 shrink-0 text-neutral-700 dark:text-neutral-200" />
+    ),
+  },
+  {
+    label: "Facturación",
+    href: "/dashboard/billing",
+    icon: (
+      <ReceiptText className="h-6 w-6 shrink-0 text-neutral-700 dark:text-neutral-200" />
     ),
   },
   {
@@ -25,7 +38,7 @@ const links = [
   },
   {
     label: "Logout",
-    href: "/",
+    href: "/login",
     icon: (
       <LogOut className="h-6 w-6 shrink-0 text-neutral-700 dark:text-neutral-200" />
     ),
@@ -34,7 +47,7 @@ const links = [
 
 export default function NavLinks() {
   return (
-    <div className="ml-2 md:mt-10 flex md:flex-col gap-6 md:gap-4 flex-row">
+    <div className="ml-2 md:mt-6 flex md:flex-col gap-6 md:gap-4 flex-row">
       {links.map((link, idx) => (
         <SidebarLink key={idx} link={{ ...link }} />
       ))}

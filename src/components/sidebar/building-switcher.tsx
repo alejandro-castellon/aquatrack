@@ -24,11 +24,24 @@ export default function BuildingSwitcher({ open }: BuildingSwitcherProps) {
     {
       id: "1",
       name: "Torre 1",
-      image: "https://github.com/shadcn.png",
+      image:
+        "https://images.unsplash.com/photo-1489936724440-afaf5a115ede?q=80&w=2051&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       initials: "T1",
     },
-    { id: "2", name: "Attura", image: "", initials: "AT" },
-    { id: "3", name: "Fidel Anze", image: "", initials: "FA" },
+    {
+      id: "2",
+      name: "Attura",
+      image:
+        "https://images.unsplash.com/photo-1624204386084-dd8c05e32226?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      initials: "AT",
+    },
+    {
+      id: "3",
+      name: "Fidel Anze",
+      image:
+        "https://images.unsplash.com/photo-1561321698-40ae82a47b9e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      initials: "FA",
+    },
   ];
 
   const currentProfile =

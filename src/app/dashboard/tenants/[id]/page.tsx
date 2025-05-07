@@ -16,7 +16,7 @@ import {
   DialogClose,
 } from "@/components/ui/dialog";
 
-export default function Page() {
+export default function Tenant() {
   const [isRunning, setIsRunning] = useState<boolean>(false);
   const [client] = useState(connectMqttClient()); // Usar el cliente MQTT del layout
   const [chartPress, setChartPress] = useState<{ value: number }[]>([]);

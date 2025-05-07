@@ -1,28 +1,28 @@
-import { Logo, LogoIcon } from "@/components/logo";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-
-export default function Home() {
+import Image from "next/image";
+import { LoginForm } from "@/components/login/login-form";
+import { Logo } from "@/components/logo";
+export default function LoginPage() {
   return (
-    <main className="min-h-screen flex flex-col md:flex-row">
-      <div className="hidden md:flex w-full md:w-1/2 bg-sky-900 flex-col justify-center text-white p-10">
-        <Logo w={80} h={30} />
-        <p className="text-sm mt-2">
-          Aquatrack es la solución perfecta para medir el consumo de agua en
-          departamentos. Con medidores inteligentes y una plataforma
-          centralizada, podrás monitorear tu uso de agua de manera fácil y
-          eficiente.
-        </p>
+    <div className="grid min-h-svh lg:grid-cols-2">
+      <div className="flex flex-col gap-4 p-6 md:p-10">
+        <div className="flex justify-center mt-4 md:mt-0 md:justify-start">
+          <Logo w={40} h={40} />
+        </div>
+        <div className="flex flex-1 items-center justify-center">
+          <div className="w-full max-w-xs">
+            <LoginForm />
+          </div>
+        </div>
       </div>
-      <div className="w-full md:w-1/2 flex flex-col items-center justify-center min-h-screen md:min-h-0">
-        <LogoIcon w={80} h={30} />
-        <h2 className="text-center text-2xl mt-4 mb-12">WELCOME</h2>
-        <Link href="/dashboard">
-          <Button className="flex items-center gap-x-2 font-medium text-sm text-white bg-sky-500 hover:bg-gray-600 active:bg-blue-700 ">
-            Iniciar Sesión
-          </Button>
-        </Link>
+      <div className="relative hidden bg-muted lg:block">
+        <Image
+          src="/water.jpg"
+          alt="Image"
+          className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
+          width={1000}
+          height={1000}
+        />
       </div>
-    </main>
+    </div>
   );
 }

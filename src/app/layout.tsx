@@ -4,7 +4,7 @@ import "@/styles/globals.css";
 import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
-  title: "Aquatrack",
+  title: { template: "%s | Aquatrack", default: "Aquatrack" },
   description: "The water meter app",
 };
 
