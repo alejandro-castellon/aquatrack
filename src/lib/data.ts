@@ -2,7 +2,7 @@ import { Inquilino } from "@/types";
 
 export const inquilinos: Inquilino[] = [
   {
-    id: "728ed52a",
+    id: "user1",
     name: "Juan Pérez",
     email: "j@example.com",
     dpto: "101",
@@ -12,7 +12,7 @@ export const inquilinos: Inquilino[] = [
     pagoMensual: 25,
   },
   {
-    id: "728ed52f",
+    id: "user2",
     name: "María López",
     email: "m@example.com",
     dpto: "102",
@@ -22,7 +22,7 @@ export const inquilinos: Inquilino[] = [
     pagoMensual: 100,
   },
   {
-    id: "728ed52c",
+    id: "user3",
     name: "Roberto Gómez",
     email: "r@example.com",
     dpto: "103",
