@@ -178,10 +178,10 @@ const Contact = () => {
                   <div className="ml-4">
                     <p className="font-medium">Correo Electrónico:</p>
                     <a
-                      href="mailto:admin@aquatrack.com"
+                      href="mailto:info@aquatrack.net"
                       className="hover:underline"
                     >
-                      admin@aquatrack.com
+                      info@aquatrack.net
                     </a>
                   </div>
                 </div>

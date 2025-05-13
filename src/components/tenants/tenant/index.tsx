@@ -32,7 +32,7 @@ export default function TenantData({ selectedTenant }: TenantProps) {
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4 text-gray-400" />
-                  <span className="text-sm">+52 (55) 1234 5678</span>
+                  <span className="text-sm">1234 5678</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Users className="h-4 w-4 text-gray-400" />
